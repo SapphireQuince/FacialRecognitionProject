@@ -32,24 +32,25 @@ This project is a simple yet effective facial recognition system built for local
 
 ### Running the Project — Step by Step
 
-1. **Add your training images:**  
+1. **Add your training images:**
+   Add or edit the files names and paths inside the python files according to your directory creation. 
    Place your images into the `images/` folder. Make sure they are named simply as `1.jpg`, `2.jpg`, ..., up to `25.jpg`.
 
-2. **Extract facial landmarks:**  
+3. **Extract facial landmarks:**  
    Run the landmark extraction script — this will process the images and save the landmark data in `landmarks.csv`.
 
    ```
    python facial_landmark_extraction.py
    ```
 
-3. **Label the data and train the model:**  
+4. **Label the data and train the model:**  
    Run the training script to label each image with an ID and train the KNN classifier.
 
    ```
    python train_knn.py
    ```
 
-4. **Test the face recognition:**  
+5. **Test the face recognition:**  
    Put a test image inside the `images/` folder, for example `test_image.jpg`, and run the prediction script to see if the system recognizes it.
 
    ```
